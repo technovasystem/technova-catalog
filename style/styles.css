@@ -109,14 +109,14 @@ table tbody td:nth-child(1) {
 
 /* Anchos columnas */
 table th:nth-child(1), table td:nth-child(1) {
-  width: 16%;         /* ← la hicimos un poquitico más ancha */
+  width: 18%;         /* ← la hicimos un poquitico más ancha */
   padding-left: 1rem; /* ← para que respire un poco del borde */
   text-align: left;
 }
 
 table th:nth-child(2), table td:nth-child(2),
 table th:nth-child(3), table td:nth-child(3) {
-  width: 44%;
+  width: 50%;
   text-align: center;
 }
 
