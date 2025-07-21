@@ -232,8 +232,7 @@ footer {
 }
 
 .quienes-somos {
-  max-width: 750px; /* Aquí controlas el ancho del recuadro */
-  width: 100%;
+  max-width: 800px; /* Aquí controlas el ancho del recuadro */
   margin: 2rem auto;
   padding: 1.5rem 2rem;
   background-color: #f0f8ff;
