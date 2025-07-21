@@ -363,6 +363,16 @@ body {
   padding: 20px;
 }
 
+.catalogo-bloque {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 600px) {
   .contenedor-ajustado {
     padding: 0 0.5rem;
@@ -377,14 +387,4 @@ body {
     width: 100%;
     align-items: stretch;
   }
-}
-
-.catalogo-bloque {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: #f9f9f9;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
