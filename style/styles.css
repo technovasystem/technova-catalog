@@ -108,9 +108,17 @@ table tbody td:nth-child(1) {
 }
 
 /* Anchos columnas */
-table th:nth-child(1), table td:nth-child(1) { width: 11%; }
-table th:nth-child(2), table td:nth-child(2) { width: 28%; }
-table th:nth-child(3), table td:nth-child(3) { width: 28%; }
+table th:nth-child(1), table td:nth-child(1) {
+  width: 14%;         /* ← la hicimos un poquitico más ancha */
+  padding-left: 1rem; /* ← para que respire un poco del borde */
+  text-align: left;
+}
+
+table th:nth-child(2), table td:nth-child(2),
+table th:nth-child(3), table td:nth-child(3) {
+  width: 43%;
+  text-align: center;
+}
 
 footer {
   background: linear-gradient(to right, #003366, #005080);
