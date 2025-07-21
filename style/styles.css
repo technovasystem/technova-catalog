@@ -107,16 +107,35 @@ table tbody td:nth-child(1) {
   font-weight: bold;
 }
 
-/* Anchos columnas */
-table th:nth-child(1), table td:nth-child(1) {
-  width: 18%;         /* ← la hicimos un poquitico más ancha */
-  padding-left: 1rem; /* ← para que respire un poco del borde */
+/* Primera columna */
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 18%;
+  padding-left: 1rem;
   text-align: left;
+  font-weight: bold;
+  color: #003366;
 }
 
-table th:nth-child(2), table td:nth-child(2),
-table th:nth-child(3), table td:nth-child(3) {
-  width: 50%;
+/* Columnas 2 y 3: contenido equilibrado */
+table th:nth-child(2),
+table td:nth-child(2),
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 23%;
+  text-align: center;
+}
+
+/* Últimas 4 columnas: acciones, precios, etc. */
+table th:nth-child(4),
+table td:nth-child(4),
+table th:nth-child(5),
+table td:nth-child(5),
+table th:nth-child(6),
+table td:nth-child(6),
+table th:nth-child(7),
+table td:nth-child(7) {
+  width: 9%;
   text-align: center;
 }
 
