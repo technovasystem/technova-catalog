@@ -1,1 +1,337 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #cce6ff, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
+header {
+  background-image: url("../assets/fondo_header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 0.3rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.ubicacion {
+  font-size: 0.9rem;
+  margin-top: 0;
+  color: #cceeff;
+}
+
+.contacto {
+  background-color: #e6f4ff;
+  border-left: 6px solid #3399cc;
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #003366;
+}
+
+.contacto h2 {
+  color: #005080;
+}
+
+.grupo-servicio {
+  padding: 1rem 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border: 1.5px solid #444444; /* borde externo oscuro */
+}
+
+/* Bordes encabezado en blanco */
+table thead th {
+  background-color: #005080; /* azul oscuro */
+  color: white;
+  border: 1.5px solid white; /* borde blanco en encabezado */
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Bordes celdas cuerpo de tabla en color oscuro */
+table tbody td {
+  border: 1.5px solid #444444;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Primera columna alineada a la izquierda, texto azul oscuro y negrita */
+table tbody td:nth-child(1) {
+  text-align: left;
+  color: #003366; /* azul oscuro */
+  font-weight: bold;
+}
+
+/* Color azul oscuro para precios y nombres destacados */
+.precio-verde {
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Anchos columnas */
+table th:nth-child(1), table td:nth-child(1) { width: 11%; }
+table th:nth-child(2), table td:nth-child(2) { width: 28%; }
+table th:nth-child(3), table td:nth-child(3) { width: 28%; }
+
+footer {
+  background: linear-gradient(to right, #003366, #005080);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  border-top: 3px solid #ffffff44; /* una línea blanca semitransparente arriba */
+}
+
+/* BOT */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.chatbot-bubble {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.chatbot-bubble:hover {
+  background-color: #0056b3;
+}
+
+.chatbot-window {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 320px;
+  max-width: 90vw;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.chatbot-header {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chatbot-body {
+  padding: 1rem;
+}
+
+#input-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#input-area input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+#input-area button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.quienes-somos {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  line-height: 1.6;
+}
+
+.quienes-somos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #005080;
+  font-weight: 700;
+}
+
+.quienes-somos h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #0073e6;
+  font-weight: 600;
+  border-bottom: 2px solid #3399cc;
+  padding-bottom: 0.3rem;
+}
+
+.quienes-somos p {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.quienes-somos ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: disc;
+  color: #004080;
+  font-size: 1.1rem;
+}
+
+.quienes-somos ul li {
+  margin-bottom: 0.7rem;
+}
+
+/* Contenedor botón Cambiar Vista centrado */
+.btn-cambiar-vista-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Botones azules con letras blancas */
+.btn-catalogo {
+  background-color: #007BFF; /* azul tech */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn-catalogo:hover {
+  background-color: #0056b3; /* azul oscuro hover */
+}
+
+/* Sección catálogo bloque: info + botones alineados */
+.catalogo-bloque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+/* Texto info catálogo */
+.info-catalogo {
+  max-width: 70%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Contenedor botones alineados a la derecha */
+.botones-catalogo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+/* Botón Ver Ejemplo y Carrito con mismo estilo btn-catalogo */
+.btn-ver-ejemplo {
+  /* si quieres diferenciar, aquí puedes poner estilos */
+}
+
+.btn-carrito {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Botón cambiar vista
+document.querySelectorAll('.btn-cambiar-vista').forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert("Aquí cambiarías la vista de bloques a tabla o viceversa");
+    // Lógica real se puede implementar más adelante
+  });
+});
+
+// Botón ver ejemplo
+document.querySelectorAll('.btn-ver-ejemplo').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const imgSrc = btn.getAttribute('data-img');
+    const desc = btn.getAttribute('data-desc');
+    const contenido = 
+      <img src="${imgSrc}" alt="Ejemplo" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+      <p>${desc}</p>
+    ;
+    document.getElementById('modalContenido').innerHTML = contenido;
+    document.getElementById('modalEjemplo').style.display = 'block';
+  });
+});
+
+// Cerrar modal
+document.getElementById('modalCerrar').addEventListener('click', () => {
+  document.getElementById('modalEjemplo').style.display = 'none';
+});
