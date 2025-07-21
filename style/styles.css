@@ -246,6 +246,12 @@ footer {
   margin-bottom: 0.6rem;
 }
 
+.destacado-final {
+  font-weight: 600;
+  text-align: center;
+  color: #0073e6;
+  font-size: 1.1rem;
+}
 /* Contenedor botón Cambiar Vista centrado */
 .btn-cambiar-vista-container {
   text-align: center;
