@@ -350,3 +350,9 @@ footer {
 body {
   background-color: yellow !important;
 }
+
+.contenedor-ajustado {
+  max-width: 900px; /* 🔁 Ajusta según tu gusto */
+  margin: 0 auto;   /* ✅ Centra horizontalmente */
+  padding: 0 1rem;  /* ✅ Deja respiración lateral */
+}
