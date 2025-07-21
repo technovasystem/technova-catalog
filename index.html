@@ -73,10 +73,6 @@
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/5350755467" target="_blank">+53 50755467</a></p>
     <p><strong>Telegram:</strong> <a href="https://t.me/TechNovaSystem" target="_blank">@TechNovaSystem</a></p>
   </section>
-<!-- Botón Cambiar Vista arriba -->
-<div class="btn-cambiar-vista-container">
-  <button class="btn-catalogo btn-cambiar-vista" id="btnCambiarVistaArriba">🔁 Cambiar Vista</button>
-</div>
 
 <!-- Catálogo Minimalista -->
 <section class="catalogo-bloque">
@@ -109,15 +105,6 @@
 <!-- Aquí irían los demás catálogos, separados por línea -->
 <hr />
 
-<!-- Botón Cambiar Vista abajo -->
-<div class="btn-cambiar-vista-container">
-  <button class="btn-catalogo" id="btnCambiarVistaAbajo">🔁 Cambiar Vista</button>
-</div>
-
-  <section id="tablaView" style="display:none;">
-    <div class="vista-control">
-      <button id="toggleViewBtn2">🔁 Cambiar Vista</button>
-    </div>
     <h2>📦 Servicios de Catálogos Digitales (Tabla Comparativa)</h2>
     <table>
 <thead>
@@ -291,9 +278,6 @@
         </tr>
       </tbody>
     </table>
-    <div class="vista-control">
-      <button id="toggleViewBtn2">🔁 Cambiar Vista</button>
-    </div>
   </section>
 
   <footer>
@@ -314,34 +298,6 @@
     </div>
   </div>
 </div>
-
-  <!-- 🔄 MODAL (fuera de los catálogos) -->
-  <div id="modalEjemplo" class="modal" style="display:none;">
-    <div class="modal-contenido">
-      <span id="modalCerrar" class="cerrar">&times;</span>
-      <div id="modalContenido"></div>
-    </div>
-  </div>
-
-<!-- ✅ Aquí va el SCRIPT del MODAL -->
-<script>
-  document.querySelectorAll('.btn-ver-ejemplo').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const imgSrc = btn.getAttribute('data-img');
-      const desc = btn.getAttribute('data-desc');
-      const contenido = 
-        <img src="${imgSrc}" alt="Ejemplo" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-        <p>${desc}</p>
-      ;
-      document.getElementById('modalContenido').innerHTML = contenido;
-      document.getElementById('modalEjemplo').style.display = 'block';
-    });
-  });
-
-  document.getElementById('modalCerrar').addEventListener('click', () => {
-    document.getElementById('modalEjemplo').style.display = 'none';
-  });
-</script>
 
 <!-- Este es tu bot -->
 <script src="js/bot.js"></script>
