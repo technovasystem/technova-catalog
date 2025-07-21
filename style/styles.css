@@ -310,7 +310,7 @@ footer {
 }
 
 .contenedor-tabla {
-  max-width: 900px; /* ← Ajusta aquí el ancho que desees */
+  max-width: 750px; /* ← Ajusta aquí el ancho que desees */
   margin: 0 auto;   /* ← Esto la centra en la pantalla */
   padding: 0 1rem;  /* ← Espacio lateral en pantallas pequeñas */
 }
