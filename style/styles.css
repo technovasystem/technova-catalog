@@ -346,6 +346,12 @@ footer {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+.contenedor-ajustado {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
 }
 
 body {
