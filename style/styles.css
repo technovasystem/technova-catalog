@@ -231,6 +231,19 @@ footer {
   margin-bottom: 0.7rem;
 }
 
+.quienes-somos {
+  max-width: 750px; /* Aquí controlas el ancho del recuadro */
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  line-height: 1.6;
+}
+
 /* Contenedor botón Cambiar Vista centrado */
 .btn-cambiar-vista-container {
   text-align: center;
