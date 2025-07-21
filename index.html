@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo TechNova System 2025</title>
+  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+  <style>
+    /* Estilo para las columnas de precios */
+    table th:nth-child(4),
+    table th:nth-child(5),
+    table th:nth-child(6),
+    table th:nth-child(7),
+    table td:nth-child(4),
+    table td:nth-child(5),
+    table td:nth-child(6),
+    table td:nth-child(7) {
+      width: 9%;
+      text-align: center;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="TechNova Logo" class="logo" />
+    <h1>Catálogo de Servicios</h1>
+    <p class="ubicacion">📍 La Habana, Cuba — Servicios Remotos</p>
+  </header>
+
+  <!-- Sección Quiénes Somos -->
+  <section class="quienes-somos">
+    <h2>👩‍💻 Quiénes Somos</h2>
+    <p>
+      En <strong>TechNova System</strong> somos una empresa cubana comprometida con la innovación tecnológica<br>y la transformación digital de negocios. Nuestra misión es acercar soluciones digitales efectivas, accesibles y personalizadas a emprendedores, pequeñas y medianas empresas, así como a profesionales independientes que desean potenciar su presencia online.
+    </p>
+
+    <h3>Nuestra Visión</h3>
+    <p>
+      Ser líderes en el desarrollo de productos digitales que impulsen el crecimiento y competitividad de nuestros clientes en el mercado local y global, combinando creatividad, tecnología y experiencia.
+    </p>
+
+    <h3>Lo que hacemos</h3>
+    <ul>
+      <li><strong>Diseño y desarrollo de catálogos digitales</strong> adaptados a las necesidades específicas de cada cliente, desde páginas sencillas hasta sistemas avanzados con inteligencia artificial y automatización.</li>
+      <li><strong>Integración de herramientas inteligentes</strong>, como bots conversacionales que optimizan la atención al cliente y mejoran la experiencia de usuario.</li>
+      <li><strong>Soporte y mantenimiento continuo</strong>, asegurando que tu presencia digital funcione siempre<br>al máximo rendimiento.</li>
+      <li><strong>Soluciones offline y online</strong>, garantizando que tu negocio nunca pierda conexión con sus clientes, incluso en condiciones de internet limitadas.</li>
+      <li><strong>Capacitación y asesoría personalizada</strong>, para que tú y tu equipo puedan sacar el máximo provecho de las herramientas digitales implementadas.</li>
+    </ul>
+
+    <h3>Nuestro compromiso</h3>
+    <p>
+      En TechNova System valoramos la confianza y el crecimiento conjunto. Por eso, trabajamos codo<br>a codo contigo para entender tu negocio, tus retos y objetivos, y ofrecerte un servicio integral que te ayude a destacar en el entorno digital.
+    </p>
+
+    <h3>¿Por qué elegirnos?</h3>
+    <ul>
+      <li>Equipo con experiencia local e internacional.</li>
+      <li>Atención dedicada y personalizada.</li>
+      <li>Innovación constante para adaptarnos a las tendencias.</li>
+      <li>Soluciones escalables y seguras.</li>
+      <li>Precios competitivos y adaptados a tu presupuesto.</li>
+    </ul>
+
+    <h3>¡¡Únete a la familia TechNova y transforma tu negocio hoy!!</h3>
+  </section>
+
+  <section class="contacto">
+    <h2>📞 Contacto de TechNova System</h2>
+    <p><strong>Correo:</strong> <a href="mailto:soporte.technovasystem@gmail.com">soporte.technovasystem@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5350755467" target="_blank">+53 50755467</a></p>
+    <p><strong>Telegram:</strong> <a href="https://t.me/TechNovaSystem" target="_blank">@TechNovaSystem</a></p>
+  </section>
+<!-- Botón Cambiar Vista arriba -->
+<div class="btn-cambiar-vista-container">
+  <button class="btn-catalogo btn-cambiar-vista" id="btnCambiarVistaArriba">🔁 Cambiar Vista</button>
+</div>
+
+<!-- Catálogo Minimalista -->
+<section class="catalogo-bloque">
+  <div class="info-catalogo">
+    <h3>🎯 Catálogo Minimalista</h3>
+    <p><strong>Ideal para:</strong> Freelancers, diseñadores, artesanos</p>
+    <p><strong>Incluye:</strong> Página estática sin interacción</p>
+    <p><strong>Precio:</strong> 1,000 CUP — <em>Mant. 500 CUP</em></p>
+  </div>
+  <div class="botones-catalogo">
+    <!-- Botón Ver Ejemplo -->
+    <button 
+      class="btn-catalogo btn-ver-ejemplo" 
+      data-img="assets/ejemplo_minimalista.png" 
+      data-desc="Ejemplo del Catálogo Minimalista: página sencilla y estática ideal para profesionales independientes.">
+      🔍 Ver Ejemplo
+    </button>
+ 
+    <!-- Botón Carrito -->
+    <a 
+      href="https://wa.me/5350755467?text=Hola%20TechNova!%20Quiero%20el%20Cat%C3%A1logo%20Minimalista" 
+      class="btn-catalogo btn-carrito" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      🛒 Pedir por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- Aquí irían los demás catálogos, separados por línea -->
+<hr />
+
+<!-- Botón Cambiar Vista abajo -->
+<div class="btn-cambiar-vista-container">
+  <button class="btn-catalogo" id="btnCambiarVistaAbajo">🔁 Cambiar Vista</button>
+</div>
+
+  <section id="tablaView" style="display:none;">
+    <div class="vista-control">
+      <button id="toggleViewBtn2">🔁 Cambiar Vista</button>
+    </div>
+    <h2>📦 Servicios de Catálogos Digitales (Tabla Comparativa)</h2>
+    <table>
+<thead>
+  <tr>
+    <th rowspan="2">Tipo de Catálogo</th>
+    <th rowspan="2">Incluye</th>
+    <th rowspan="2">Ideal para</th>
+    <th colspan="2">Precios del Catálogo (CUP)</th>
+    <th colspan="2">Precios de Hosting (CUP)</th>
+  </tr>
+  <tr>
+    <th style="width:9%">Inicial</th>
+    <th style="width:9%">Mant.<br>Mensual</th>
+    <th style="width:9%">Instalación</th>
+    <th style="width:9%">Mant.<br>Mensual</th>
+  </tr>
+</thead>
+      <tbody>
+        <tr>
+          <td><span class="viñetas"></span>Catálogo Minimalista / Landing Page</td>
+          <td>Página estática básica, presentacion<br>simple, sin interacción</td>
+          <td>Freelancers (diseñadores, fotógrafos, artesanos, consultores independientes, pequeños servicios locales)</td>
+          <td class="precio-verde">1,000</td>
+          <td class="precio-verde">500</td>
+          <td class="precio-verde">300</td>
+          <td class="precio-verde">450</td>
+        </tr>
+        <tr>
+          <td>Catálogo Básico</td>
+          <td>Página estática HTML con servicios / productos, sin interacción</td>
+          <td>Tiendas pequeñas de ropa o accesorios, salones de belleza, talleres de reparación,<br>panaderías artesanales</td>
+          <td class="precio-verde">1,000</td>
+          <td class="precio-verde">500</td>
+          <td class="precio-verde">300</td>
+          <td class="precio-verde">450</td>
+        </tr>
+        <tr>
+          <td>Catálogo Multilingüe</td>
+          <td>Catálogo básico + soporte multilenguaje<br>para idiomas</td>
+          <td>Pequeños holetes, guías turísticos, restaurantes que atiendan<br>turistas extranjeros</td>
+          <td class="precio-verde">2,000</td>
+          <td class="precio-verde">1,000</td>
+          <td class="precio-verde">350</td>
+          <td class="precio-verde">525</td>
+        </tr>
+        <tr>
+          <td>Catálogo con Carrito<br>de Pedidos</td>
+          <td>Cátalogo básico + formulario de pedidos vía WhatsApp / Telegram + opción de editar servicios / productos<br>como agotados</td>
+          <td>Tienda de alimentos, boutiques de ropa<br>con pedidos, librerías, ferreterías con<br>ventas por encargo</td>
+          <td class="precio-verde">2,000</td>
+          <td class="precio-verde">1,000</td>
+          <td class="precio-verde">350</td>
+          <td class="precio-verde">525</td>
+        </tr>
+        <tr>
+          <td>Catálogo con Bot Inteligente</td>
+          <td>Catálogo básico + Bot que responde, calcula pagos, agenda citas, envia mensajes + opción de editar servicios / productos<br>como agotados</td>
+          <td>Clinicas y farmacias pequeñas, servicios dereparacion técnica, consultorías que requieren atención automatizada</td>
+          <td class="precio-verde">3,000</td>
+          <td class="precio-verde">1,500</td>
+          <td class="precio-verde">400</td>
+          <td class="precio-verde">600</td>
+        </tr>
+        <tr>
+          <td>Catálogo para Eventos y Reservas</td>
+          <td>Catálogo Básico + Carrito + agenda de reservas, confirmaciones automáticas, recordatorios + opción de editar servicios / productos como agotados</td>
+          <td>Restaurantes con reservaciones, spas, centros culturales, salones de eventos</td>
+          <td class="precio-verde">3,500</td>
+          <td class="precio-verde">1,750</td>
+          <td class="precio-verde">450</td>
+          <td class="precio-verde">675</td>
+        </tr>
+        <tr>
+          <td>Catálogo Digital Interactivo</td>
+          <td>Catálogo Básico + Bot + Carrito + opción de editar servicios / productos como agotados</td>
+          <td>Tiendas medianas activas, cafeterías con pedido y atención personalizada o a domicilio, pequeños gimnasios</td>
+          <td class="precio-verde">4,000</td>
+          <td class="precio-verde">2,000</td>
+          <td class="precio-verde">500</td>
+          <td class="precio-verde">750</td>
+        </tr>
+        <tr>
+          <td>Catálogo con integracion a Redes Sociales</td>
+          <td>Catálogo Básico + Botones de redes sociales + carrito + Enlaces de productos compartibles + chat flotantes de Telegram, Instagram o WhatsApp + Boton de compartir en redes productos o sección + Publicación automática en las redes (avanzado) + Sincronicacion automatica con el servidor internet</td>
+          <td>Zapateros, cosméticos, ropa importada, joyería, comida saludable, manualidades o artesanía, Tiendas, Heladerias, centros de estéticas, negocios con Telegram fuerte como venta de combos, servicios a domiciios, reelancers (diseñadores, fotógrafos, artesanos, consultores independientes, pequeños servicios locales)</td>
+          <td class="precio-verde">5,000</td>
+          <td class="precio-verde">2,500</td>
+          <td class="precio-verde">600</td>
+          <td class="precio-verde">900</td>
+        </tr>
+        <tr>
+          <td>Catálogo Empresarial Estándar</td>
+          <td>Catálogo Básico + Bot + Carrito + Agenda + opción de editar servicios / productos<br>como agotados</td>
+          <td>Consultoras medianas, empresas de servicios profesionales, clínicas de<br>mediana capacidad</td>
+          <td class="precio-verde">5,000</td>
+          <td class="precio-verde">2,500</td>
+          <td class="precio-verde">600</td>
+          <td class="precio-verde">900</td>
+        </tr>
+        <tr>
+          <td>Catálogo Empresarial Estándar + Recordatrios</td>
+          <td>Catálogo Básico + Bot + Carrito + Agenda + Recordatorios + opción de editar servicios / productos como agotados</td>
+          <td>Academias deportivas, talleres especializados, negocios con<br>clientes recurrentes</td>
+          <td class="precio-verde">6,000</td>
+          <td class="precio-verde">3,000</td>
+          <td class="precio-verde">700</td>
+          <td class="precio-verde">1,050</td>
+        </tr>
+        <tr>
+          <td>Catálogo Offline o<br>App Local</td>
+          <td>Catálogo Básico + Carrito + bot + opción de editar servicios / productos como agotados + Busqueda y filtrado local + Interfaz dinamica o Botones de menu + Agenda + Recordatorios + CRUD de productos local (edicion de prodúctos en el catálogo) </td>
+          <td>Vendedor ambulante, Salon de belleza, Distribuidor en provicia, Empresas<br>estatales en intranet</td>
+          <td class="precio-verde">7,500</td>
+          <td class="precio-verde">3,750</td>
+          <td class="precio-verde">850</td>
+          <td class="precio-verde">1,275</td>
+        </tr>
+        <tr>
+          <td>Catálogo para Servicios de Suscripcion</td>
+          <td>Catálogo Básico + Bot + Botones de WhatsApp + Seguimiento automatizado + Recodatorio + CRUD para planes (edicion de planes en el catálogo)</td>
+          <td>Profesores particulares, entrenadores personales, empresa de software, diseñadores, agencias digitales,<br>productores musicales, blogueros,<br>creadores de contenidos</td>
+          <td class="precio-verde">7,500</td>
+          <td class="precio-verde">3,750</td>
+          <td class="precio-verde">850</td>
+          <td class="precio-verde">1,275</td>
+        </tr>
+        <tr>
+          <td>Catálogo Empresarial Avanzado</td>
+          <td>Catálogo Básico + Bot + Carrito + Agenda + Seguimiento + Recordatorios + opción de editar servicios / productos<br>como agotados</td>
+          <td>Empresas de eventos, agencias de viajes, servicios técnicos<br>con soportes posventa</td>
+          <td class="precio-verde">7,500</td>
+          <td class="precio-verde">3,750</td>
+          <td class="precio-verde">850</td>
+          <td class="precio-verde">1,275</td>
+        </tr>
+        <tr>
+          <td>Catálogo Empresarial Avanzado + Estadistícas</td>
+          <td>Catálogo Básico + Bot + Carrito + Agenda + Seguimiento + Recordatorios + Estadistícas + opción de editar servicios / productos<br>como agotados</td>
+          <td>Clínicas grandes, cadenas de tiendas, centros educaticos</td>
+          <td class="precio-verde">9,000</td>
+          <td class="precio-verde">4,500</td>
+          <td class="precio-verde">1,000</td>
+          <td class="precio-verde">1,500</td>
+        </tr>
+        <tr>
+          <td>Catálogo Empresarial + Control Interno</td>
+          <td>Catálogo Básico + CRM Lite + Bot + Carrito + Agenda + Seguimiento + Recordatorios + Estadísticas + opción de editar servicios / productos como agotados</td>
+          <td>Empresa de consultoría, negocios con equipo de ventas, franquicias pequeñas</td>
+          <td class="precio-verde">12,500</td>
+          <td class="precio-verde">6,250</td>
+          <td class="precio-verde">1,330</td>
+          <td class="precio-verde">1,995</td>
+        </tr>
+        <tr>
+          <td>Catálogo de Servicios informáticos y Aplicaciones</td>
+          <td>Catálogo Básico + CRM Lite + Bot + Carrito + Agenda + Seguimiento + Recordatorios + Portafolio con ejemplos de proyectos + Estadísticas + opción de editar servicios / productos como agotados</td>
+          <td>Venta de Cursos informáticos, soluciones informáticas, servicios informáticos, etc.</td>
+          <td class="precio-verde">16,000</td>
+          <td class="precio-verde">8,000</td>
+          <td class="precio-verde">1,660</td>
+          <td class="precio-verde">2,490</td>
+        </tr>
+        <tr>
+          <td>Catálogo Premium + Control Interno (CRM Completo)</td>
+          <td>Catálogo Básico + CRM completo + Bot + Carrito + Agenda + Seguimiento + Recordatorios + Fidelizacion + Estadísticas + opción de editar servicios / productos<br>como agotados</td>
+          <td>Grandes negocios con múltiples suscursales, cadenas comerciales, empresas con departamentos de atención al cliente</td>
+          <td class="precio-verde">20,000</td>
+          <td class="precio-verde">10,000</td>
+          <td class="precio-verde">2,000</td>
+          <td class="precio-verde">3,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="vista-control">
+      <button id="toggleViewBtn2">🔁 Cambiar Vista</button>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>© 2025 TechNova System — Soluciones Digitales a tu alcance</strong></p>
+  </footer>
+
+<!-- BOT FLOTANTE -->
+<div class="chatbot-container">
+  <div class="chatbot-bubble" onclick="toggleChat()">💬</div>
+  <div class="chatbot-window" id="chatbotWindow" style="display:none;">
+    <div class="chatbot-header">🤖 TechNova Bot</div>
+    <div class="chatbot-body">
+      <div id="chat"></div>
+      <div id="input-area">
+        <input type="text" id="userInput" placeholder="Escribe aquí..." autocomplete="off" />
+        <button id="sendBtn">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 🔄 MODAL (fuera de los catálogos) -->
+  <div id="modalEjemplo" class="modal" style="display:none;">
+    <div class="modal-contenido">
+      <span id="modalCerrar" class="cerrar">&times;</span>
+      <div id="modalContenido"></div>
+    </div>
+  </div>
+
+<!-- ✅ Aquí va el SCRIPT del MODAL -->
+<script>
+  document.querySelectorAll('.btn-ver-ejemplo').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const imgSrc = btn.getAttribute('data-img');
+      const desc = btn.getAttribute('data-desc');
+      const contenido = 
+        <img src="${imgSrc}" alt="Ejemplo" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+        <p>${desc}</p>
+      ;
+      document.getElementById('modalContenido').innerHTML = contenido;
+      document.getElementById('modalEjemplo').style.display = 'block';
+    });
+  });
+
+  document.getElementById('modalCerrar').addEventListener('click', () => {
+    document.getElementById('modalEjemplo').style.display = 'none';
+  });
+</script>
+
+<!-- Este es tu bot -->
+<script src="js/bot.js"></script>
+</body>
+</html>
