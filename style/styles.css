@@ -250,7 +250,7 @@ footer {
 }
 
 .quienes-somos {
-  max-width: 800px; /* Aquí controlas el ancho del recuadro */
+  max-width: 900px; /* Aquí controlas el ancho del recuadro */
   margin: 2rem auto;
   padding: 1.5rem 2rem;
   background-color: #f0f8ff;
@@ -346,23 +346,32 @@ footer {
 
   .contenedor-ajustado {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
 }
 
+/* Recuadro de presentación */
+.contenedor-tabla {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Recuadro de catálogo bloque */
 .catalogo-bloque {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: #f9f9f9;
-  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 body {
