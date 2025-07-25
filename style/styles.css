@@ -1,9 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #cce6ff, #ffffff);
+  background-color: #cce6ff;
   margin: 0;
-  padding: 0;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 header {
@@ -363,7 +361,7 @@ footer {
   padding: 1.2rem;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 50px;
   border-top: 3px solid #ffffff44; /* una línea blanca semitransparente arriba */
 }
 
@@ -595,6 +593,12 @@ footer {
   padding: 0 1rem;        /* Espacio interno lateral, como el bloque contacto */
 }
 
+.contenedor-principal::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .seccion-quienes-contacto {
   background-color: #e6f4ff;
   border-left: 6px solid var(--color-secundario);
@@ -633,7 +637,13 @@ justify-content: center;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background: linear-gradient(135deg, #357ABD, #2a5c9e);
+  box-shadow: 0 6px 10px rgba(41, 88, 148, 0.6);
+  transform: scale(1.05);
 }
 
 .frase-transformadora {
@@ -664,130 +674,9 @@ justify-content: center;
   background-color: #1a8abf;
 }
 
-/* 🔷 Contenedor de la tabla con borde exterior grueso */
-.contenedor-tabla {
-  background-color: var(--color-fondo-claro);
-  border: 1px solid var(--color-borde);
-  border-left: 6px solid var(--color-secundario);
-  border-right: 6px solid var(--color-secundario);
-  border-radius: 8px;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-  max-width: 95%;
-  box-shadow: var(--sombra-suave);
-  gap: 0.5rem;
-}
-
-/* 🎯 Estilo adicional exclusivo para título de la tabla */
-.titulo-tabla {
-  margin-top: 0.5rem;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.2rem;
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
-  color: var(--color-primario);
-  font-weight: bold;
-  text-align: center;
-  border-bottom: none;
-  border-top: none;
-}
-
-.contenedor-tabla tbody tr:nth-child(even) {
-  background-color: #e6eef5; /* azulito claro */
-}
-
-.contenedor-tabla tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* blanco */
-}
-
-/* 🧾 Estructura general de la tabla */
-.contenedor-tabla table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-/* 🔲 Celdas normales con bordes azules y centrado vertical/horizontal */
-.contenedor-tabla td,
-.contenedor-tabla th {
-  border: 2px solid var(--color-secundario); /* azul claro consistente */
-  padding: 1rem;
-  text-align: center;
-  vertical-align: middle;
-  font-family: Arial, sans-serif;
-  font-size: 0.95rem;
-  color:  #333;
-}
-
-/* ✅ Encabezado: fondo azul oscuro, texto blanco y borde blanco grueso */
-.contenedor-tabla th {
-  background-color: var(--color-primario);  /* azul oscuro */
-  color: #ffffff;
-  font-weight: bold;
-  border: 2px solid white; /* borde blanco del mismo grosor */
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* 🎯 Primera columna en azul oscuro y negrita */
-.contenedor-tabla td:first-child {
-  color: var(--color-primario);
-  font-weight: bold;
-  text-align: left;
-}
-
-/* 💰 Columna de precios azul más oscuro y centrado */
-.contenedor-tabla td.precio-verde {
-  color: #006699; /* un poquito más oscuro que #0077b3 */
-  font-weight: bold;
-  text-align: center;
-
-  .contenedor-tabla {
-    padding: 1rem;
-    margin: 0.5rem;
-  }
-
-  .contenedor-tabla table,
-  .contenedor-tabla thead,
-  .contenedor-tabla tbody,
-  .contenedor-tabla th,
-  .contenedor-tabla td,
-  .contenedor-tabla tr {
-    display: block;
-    width: 100%;
-  }
-
-  .contenedor-tabla tr {
-    margin-bottom: 1rem;
-    border: 1px solid #006699;
-    border-radius: 6px;
-    padding: 0.5rem;
-    background-color: #fff;
-  }
-
-  .contenedor-tabla td {
-    text-align: left;
-    padding: 0.5rem 0.75rem;
-  }
-
-  .contenedor-tabla th {
-    display: none;
-  }
-}
-
-/* Borde azul oscuro y más grueso en celdas del contenido */
-.contenedor-tabla td {
-  border: 2px solid #003366 !important;
-}
-
-/* Borde del encabezado (th) con azul más clarito */
-.contenedor-tabla th {
-  background-color: #003366;
-  color: #fff;
-  border: 2px solid #66a3cc !important; /* Azul más clarito */
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-align: center;
-  vertical-align: middle;
-  padding: 1rem;
+hr.separador {
+  border-top: 0.5px solid #cce6ff;
+  border: #cce6ff;
+  margin: 30px 0;
+  border-botton-color: #cce6ff;
 }
