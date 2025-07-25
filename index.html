@@ -36,6 +36,12 @@
   </ul>
 
     <h3 class="frase-transformadora">💙 ¡Únete a TechNova y transforma tu negocio digital hoy! 💙</h3>
+
+<!-- BOTÓN INICIAL PARA MOSTRAR SERVICIOS -->
+<div id="inicioBoton">
+  <button id="mostrarVistaDetallada" class="btn-vista btn-principal">🔧 Ver Servicios</button>
+</div>
+
     Para dudas, pedidos o colaboraciones, puedes escribirnos por <strong>Telegram</strong>, <strong>WhatsApp</strong> o <strong>correo electrónico</strong>. Respondemos lo antes posible.
   </p>
 <div class="botones-contacto">
@@ -45,9 +51,12 @@
   </div>
 </section>
 
+  <!-- BLOQUES DETALLADOS -->
 <h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Vista Detallada)</h3>
-<div class="contenedor-tabla" contenedor-principal>
 <div class="bloque-catalogo contenedor-principal">
+<!-- VISTA DETALLADA (BLOQUES) -->
+<div id="vistaBloques" class="vista oculto">
+  <button class="btn-vista btn-principal cambiarVista">📋 Ver Tabla Comparativa</button>
   <section class="catalogo-bloque">
     <div class="info-catalogo">
       <h3>🎯 Catálogo Minimalista</h3>
@@ -141,11 +150,13 @@ para idiomas</p>
 <!-- Aquí irían los demás catálogos, separados por línea -->
 <hr />
 
-</div>
-
+  <!-- TABLA COMPARATIVA -->
 <h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Tabla Comparativa)</h3>
-
 <div class="contenedor-tabla" contenedor-principal>
+<!-- VISTA DE TABLA -->
+<div id="vistaTabla" class="vista oculto">
+  <button class="btn-vista btn-principal cambiarVista">🧱 Ver Vista Detallada</button>
+</div>
 <table>
  <thead>
   <tr>
@@ -319,6 +330,10 @@ para idiomas</p>
       </tbody>
     </table>  
 </div>
+</div>  
+  </div>
+  <button class="btn-vista btn-principal cambiarVista">🧱 Ver Vista Detallada</button>
+</div>
 
 <!-- FINAL DEL CONTENIDO -->
 </div> <!-- Aquí cierra el .contenedor-principal -->
@@ -327,6 +342,39 @@ para idiomas</p>
 <footer class="mi-footer">
   <p>© 2025 TechNova BoliBank. Todos los derechos reservados.</p>
 </footer>
+
+  <!-- 🔹 CAMBIO DE VISTA (TechNova) -->
+<script>
+const btnInicio = document.getElementById('mostrarVistaDetallada');
+const vistaBloques = document.getElementById('vistaBloques');
+const vistaTabla = document.getElementById('vistaTabla');
+const contenedorInicio = document.getElementById('inicioBoton');
+
+// Al hacer clic en botón principal: ocultar botón inicial y mostrar bloques
+btnInicio.addEventListener('click', () => {
+  contenedorInicio.style.display = 'none'; // ocultar botón inicial
+  vistaBloques.classList.add('visible');   // mostrar bloques
+  vistaTabla.classList.remove('visible');  // asegurar tabla oculta
+});
+
+// Botones dentro de las vistas para cambiar entre bloques y tabla
+const botonesCambiarVista = document.querySelectorAll('.cambiarVista');
+botonesCambiarVista.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (vistaBloques.classList.contains('visible')) {
+      // Si está visible bloques, ocultar bloques y mostrar tabla
+      vistaBloques.classList.remove('visible');
+      vistaTabla.classList.add('visible');
+      contenedorInicio.style.display = 'none'; // asegurar que botón inicial no aparece
+    } else if (vistaTabla.classList.contains('visible')) {
+      // Si está visible tabla, ocultar tabla y mostrar bloques
+      vistaTabla.classList.remove('visible');
+      vistaBloques.classList.add('visible');
+      contenedorInicio.style.display = 'none'; // asegurar que botón inicial no aparece
+    }
+  });
+});
+</script>
 
   <!-- 🔹 BOT FLOTANTE (TechNova Bot) -->
   <div class="chatbot-container">
