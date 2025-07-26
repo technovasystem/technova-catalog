@@ -6,11 +6,6 @@
   <title>Catálogo TechNova System 2025</title>
   <link rel="stylesheet" href="style/styles.css">
   <link rel="icon" href="assets/logo.png" />
-<head>
-  <meta charset="UTF-8" />
-  <title>Catálogos TechNova</title>
-  <link rel="stylesheet" href="style/styles.css" />
-</head>
 </head>
 <body>
   <header>
@@ -19,12 +14,24 @@
     <p class="ubicacion">📍 La Habana, Cuba — Servicios Remotos</p>
   </header>
 
+<main>
 <section class="quienes-somos">
   <h2>👩‍💻 ¿Quiénes somos y cómo contactarnos?</h2>
   <p>
-    En <strong>TechNova System</strong>, desarrollamos soluciones digitales accesibles, rápidas y funcionales.
-    Nuestro catálogo conecta tecnología con personas reales: claro, útil y siempre en evolución.
-    Trabajamos con artesanos, diseñadores, revendedores, y emprendimientos que necesitan una solución moderna y sencilla.
+       <p>
+      <strong>TechNova System</strong> es una plataforma digital pensada para quienes hacen que las cosas pasen en el mundo real: emprendedores, artesanos, diseñadores, revendedores y pequeños negocios que necesitan tecnología útil, clara y sin complicaciones.
+    </p>
+    <p>
+      Creamos soluciones accesibles, rápidas y funcionales que se adaptan a tu día a día, incluso en entornos con recursos limitados o baja conectividad. Nuestro catálogo está en constante evolución, porque entendemos que tus necesidades cambian y la tecnología debe crecer contigo.
+    </p>
+    <p>
+      Conectamos lo digital con lo humano. Te damos herramientas simples, pero poderosas, para que puedas vender, organizar, cobrar, mostrar tu trabajo y tomar decisiones sin depender de terceros.
+    </p>
+    <p>
+      Somos más que una empresa de software. Somos el puente entre lo tradicional y lo moderno, entre la idea que tienes y el negocio que sueñas.
+    </p>
+    <p class="eslogan">
+      <strong>TechNova System:</strong> tecnología que entiende tu realidad y trabaja contigo.
   </p>
 
   <h3>¿Por qué elegirnos?</h3>
@@ -38,10 +45,14 @@
     <h3 class="frase-transformadora">💙 ¡Únete a TechNova y transforma tu negocio digital hoy! 💙</h3>
 
 <!-- BOTÓN INICIAL PARA MOSTRAR SERVICIOS -->
-<div id="inicioBoton">
-  <button id="mostrarVistaDetallada" class="btn-vista btn-principal">🔧 Ver Servicios</button>
-</div>
+    <!-- Botón inicial -->
+    <div id="inicioBoton">
+      <button id="mostrarVistaDetallada" class="btn-vista">
+        🔧 Ver Servicios
+      </button>
+    </div>
 
+ <p>
     Para dudas, pedidos o colaboraciones, puedes escribirnos por <strong>Telegram</strong>, <strong>WhatsApp</strong> o <strong>correo electrónico</strong>. Respondemos lo antes posible.
   </p>
 <div class="botones-contacto">
@@ -52,11 +63,14 @@
 </section>
 
   <!-- BLOQUES DETALLADOS -->
-<h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Vista Detallada)</h3>
-<div class="bloque-catalogo contenedor-principal">
-<!-- VISTA DETALLADA (BLOQUES) -->
 <div id="vistaBloques" class="vista oculto">
-  <button class="btn-vista btn-principal cambiarVista">📋 Ver Tabla Comparativa</button>
+      <div class="btn-arriba">
+        <button class="btn-vista btn-ver-tabla">📋 Ver Tabla Comparativa</button>
+      </div>
+
+<h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Vista Detallada)</h3>
+
+<div class="bloque-catalogo contenedor-principal">
   <section class="catalogo-bloque">
     <div class="info-catalogo">
       <h3>🎯 Catálogo Minimalista</h3>
@@ -67,7 +81,7 @@
     </div>
     <div class="botones-catalogo">
       <!-- 🔘 BOTÓN PARA ABRIR EL MODAL -->
-      <button class="btn-catalogo btn-ver-galeria" onclick='abrirModal([
+      <button class="btn-catalogo btn-ver-galeria btn-ejemplo boton-bloque" onclick='abrirModal([
         "assets/ejemplo_minimalista1.png",
         "assets/ejemplo_minimalista2.png",
         "assets/ejemplo_minimalista3.png"
@@ -80,6 +94,13 @@
         target="_blank" 
         rel="noopener noreferrer">
         🛒 Pedir por WhatsApp
+      </a>
+      <a
+        href="https://t.me/TechNovaSystem"
+        class="btn-catalogo btn-telegram boton-bloque"
+        target="_blank"
+        rel="noopener noreferrer">
+        🛒 Pedir por Telegram
       </a>
     </div>
   </section>
@@ -98,7 +119,7 @@ panaderías artesanales</p>
     </div>
     <div class="botones-catalogo">
       <!-- 🔘 BOTÓN PARA ABRIR EL MODAL -->
-      <button class="btn-catalogo btn-ver-galeria" onclick='abrirModal([
+      <button class="btn-catalogo btn-ver-galeria btn-ejemplo boton-bloque" onclick='abrirModal([
         "assets/ejemplo_basico1.png",
         "assets/ejemplo_basico2.png",
         "assets/ejemplo_basico3.png"
@@ -111,6 +132,13 @@ panaderías artesanales</p>
         target="_blank" 
         rel="noopener noreferrer">
         🛒 Pedir por WhatsApp
+      </a>
+      <a
+        href="https://t.me/TechNovaSystem"
+        class="btn-catalogo btn-telegram boton-bloque"
+        target="_blank"
+        rel="noopener noreferrer">
+        🛒 Pedir por Telegram
       </a>
     </div>
   </section>
@@ -128,35 +156,51 @@ para idiomas</p>
  <p><strong>Precio Catálogo:</strong> <span class="precio">2,000 CUP</span> (Inicial) — <span class="precio">1,000 CUP</span> (Mantenimiento)</p>
   <p><strong>Hosting:</strong> <span class="precio">350 CUP</span> (Instalación) — <span class="precio">525 CUP</span> (Mantenimiento)</p>
     </div>
-    <div class="botones-catalogo">
-      <!-- 🔘 BOTÓN PARA ABRIR EL MODAL -->
-      <button class="btn-catalogo btn-ver-galeria" onclick='abrirModal([
+<div class="botones-catalogo">
+  <!-- 🔘 BOTÓN PARA ABRIR EL MODAL -->
+  <button class="btn-catalogo btn-ver-galeria btn-ejemplo boton-bloque" onclick='abrirModal([
         "assets/ejemplo_multilingue1.png",
         "assets/ejemplo_multilingue2.png",
         "assets/ejemplo_multilingue3.png"
       ], "Ejemplo del Catálogo Multilingüe")'>
-        🔍 Ver Ejemplo
-      </button>
-      <a 
-        href="https://wa.me/5350755467?text=Hola%20TechNova!%20Quiero%20el%20Cat%C3%A1logo%20Minimalista" 
-        class="btn-catalogo btn-carrito" 
-        target="_blank" 
-        rel="noopener noreferrer">
-        🛒 Pedir por WhatsApp
-      </a>
-    </div>
+    🔍 Ver Ejemplo
+  </button>
+  <!-- 🛒 WHATSAPP -->
+  <a 
+    href="https://wa.me/5350755467?text=Hola%20TechNova!%20Quiero%20el%20Cat%C3%A1logo%20Minimalista"
+    class="btn-catalogo btn-carrito boton-bloque"
+    target="_blank"
+    rel="noopener noreferrer">
+    🛒 Pedir por WhatsApp
+  </a>
+  <!-- 🛒 TELEGRAM (NUEVO) -->
+  <a
+    href="https://t.me/TechNovaSystem"
+    class="btn-catalogo btn-telegram boton-bloque"
+    target="_blank"
+    rel="noopener noreferrer">
+    🛒 Pedir por Telegram
+  </a>
+</div>
   </section>
 
 <!-- Aquí irían los demás catálogos, separados por línea -->
 <hr />
 
+      <div class="btn-abajo">
+        <button class="btn-vista btn-ver-tabla">📋 Ver Tabla Comparativa</button>
+      </div>
+    </div>
+
   <!-- TABLA COMPARATIVA -->
-<h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Tabla Comparativa)</h3>
-<div class="contenedor-tabla" contenedor-principal>
-<!-- VISTA DE TABLA -->
 <div id="vistaTabla" class="vista oculto">
-  <button class="btn-vista btn-principal cambiarVista">🧱 Ver Vista Detallada</button>
-</div>
+      <div class="btn-arriba">
+        <button class="btn-vista btn-ver-bloques">🧱 Ver Catálogo por Bloques</button>
+      </div>
+
+<h3 class="titulo-catalogo titulo-tabla">📦 Servicios de Catálogos Digitales (Tabla Comparativa)</h3>
+
+<div class="contenedor-tabla contenedor-principal">
 <table>
  <thead>
   <tr>
@@ -329,11 +373,11 @@ para idiomas</p>
         </tr>
       </tbody>
     </table>  
-</div>
-</div>  
-  </div>
-  <button class="btn-vista btn-principal cambiarVista">🧱 Ver Vista Detallada</button>
-</div>
+    <div class="btn-abajo">
+      <button class="btn-vista btn-ver-bloques">🧱 Ver Catálogo por Bloques</button>
+   </div>
+ </div>  
+</main>  
 
 <!-- FINAL DEL CONTENIDO -->
 </div> <!-- Aquí cierra el .contenedor-principal -->
@@ -345,34 +389,36 @@ para idiomas</p>
 
   <!-- 🔹 CAMBIO DE VISTA (TechNova) -->
 <script>
-const btnInicio = document.getElementById('mostrarVistaDetallada');
-const vistaBloques = document.getElementById('vistaBloques');
-const vistaTabla = document.getElementById('vistaTabla');
-const contenedorInicio = document.getElementById('inicioBoton');
+document.addEventListener("DOMContentLoaded", () => {
+  const btnVerServicios = document.querySelector("#mostrarVistaDetallada");
+  const vistaBloques = document.querySelector("#vistaBloques");
+  const vistaTabla = document.querySelector("#vistaTabla");
 
-// Al hacer clic en botón principal: ocultar botón inicial y mostrar bloques
-btnInicio.addEventListener('click', () => {
-  contenedorInicio.style.display = 'none'; // ocultar botón inicial
-  vistaBloques.classList.add('visible');   // mostrar bloques
-  vistaTabla.classList.remove('visible');  // asegurar tabla oculta
-});
+  const btnVerTablas = document.querySelectorAll(".btn-ver-tabla");
+  const btnVerBloques = document.querySelectorAll(".btn-ver-bloques");
 
-// Botones dentro de las vistas para cambiar entre bloques y tabla
-const botonesCambiarVista = document.querySelectorAll('.cambiarVista');
-botonesCambiarVista.forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (vistaBloques.classList.contains('visible')) {
-      // Si está visible bloques, ocultar bloques y mostrar tabla
-      vistaBloques.classList.remove('visible');
-      vistaTabla.classList.add('visible');
-      contenedorInicio.style.display = 'none'; // asegurar que botón inicial no aparece
-    } else if (vistaTabla.classList.contains('visible')) {
-      // Si está visible tabla, ocultar tabla y mostrar bloques
-      vistaTabla.classList.remove('visible');
-      vistaBloques.classList.add('visible');
-      contenedorInicio.style.display = 'none'; // asegurar que botón inicial no aparece
-    }
+  // Paso 1: mostrar bloques desde el botón principal
+  btnVerServicios?.addEventListener("click", () => {
+    vistaBloques.classList.remove("oculto");
+    vistaTabla.classList.add("oculto");
+    btnVerServicios.classList.add("oculto");
   });
+
+  // Paso 2: mostrar la tabla comparativa
+  btnVerTablas.forEach(btn =>
+    btn.addEventListener("click", () => {
+      vistaTabla.classList.remove("oculto");
+      vistaBloques.classList.add("oculto");
+    })
+  );
+
+  // Paso 3: volver a la vista de bloques
+  btnVerBloques.forEach(btn =>
+    btn.addEventListener("click", () => {
+      vistaBloques.classList.remove("oculto");
+      vistaTabla.classList.add("oculto");
+    })
+  );
 });
 </script>
 
